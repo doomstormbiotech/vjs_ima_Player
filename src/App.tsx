@@ -1,12 +1,13 @@
-import { FC } from 'react';
+import React from 'react';
+import VideoPlayer from './VideoPlayer';
 
-import './style.css';
-
-export const App: FC<{ name: string }> = ({ name }) => {
+const App: React.FC = () => {
   return (
-    <div>
-      <h1>Hello {name}!</h1>
-      <p>Start editing to see some magic happen :)</p>
+    <div className="App">
+      <h1>Video.js IMA Demo</h1>
+      <VideoPlayer />
     </div>
   );
 };
+
+export default App;
